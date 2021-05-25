@@ -11,12 +11,12 @@ body {
     padding: 0;
 }
 
-main {
+.principal {
     background-color: #101010;
     text-align: justify;
     color: #ffffff;
     font-size: 16px;
-    width: 1050px;
+    width: 80%;
     padding: 15px;
     margin: auto;
 }
@@ -28,10 +28,14 @@ main {
 
 .img-soniccd {
     float: right;
+    width: 100%;
+    max-width: 320px;
+    max-height: 244px;
+    height: auto;
     margin-left: 15px;
 }
 
-.conteudos-sessao {
+.navegacao {
     background-color: #000000;
     width: fit-content;
     padding: 15px;
@@ -65,99 +69,32 @@ a:hover {
 .img-title-screen {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 320px;
+    max-height: 244px;
+    height: auto;
     display: block;
 }
 
-.img-palmtree-panic {
+.imagens-grandes {
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     margin-left: auto;
     margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-collision-chaos {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-tidal-tempest {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-quartz-quadrant {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-wacky-workbench {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-stardust-speedway {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-metallic-madness {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
-    display: block;
-}
-
-.img-cd-sonic {
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    margin-left: auto;
-    margin-right: auto;
-    width: 640px;
-    height: 448px;
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    max-height: 448px;
     display: block;
 }
 
 .img-sp-cdsonic {
     float: right;
+    width: 100%;
+    max-width: 320px;
+    max-height: 244px;
+    height: auto;
     margin-left: 15px;
 }
 
@@ -187,6 +124,12 @@ figcaption {
     margin-left: 15px;
 }
 
+.img-timewarp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .footer {
     background-color: #000000;
     padding: 10px;
@@ -204,10 +147,10 @@ figcaption {
 
 .footer-middle {
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 .footer-bottom {
     text-align: center;
-    color: #ffffff;    
+    color: #ffffff;
 }
