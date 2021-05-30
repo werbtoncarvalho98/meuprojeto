@@ -79,3 +79,48 @@ ul li {
     max-height: 448px;
     display: block;
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
+figcaption {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .footer {
+    background-color: #000000;
+    padding: 10px;
+}
+
+.footer-top {
+    text-align: center;
+    margin: 20px;
+}
+
+.footer-top a {
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-middle {
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ffffff;
+}
