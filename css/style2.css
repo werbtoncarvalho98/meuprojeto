@@ -89,18 +89,24 @@ figcaption {
     text-align: center;
 }
 
+.img-sonic-jumping {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .column {
     float: left;
     padding: 5px;
-  }
+}
   
 .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-  .footer {
+.footer {
     background-color: #000000;
     padding: 10px;
 }
