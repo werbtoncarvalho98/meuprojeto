@@ -21,12 +21,7 @@ body {
     margin: auto;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-  }
-
-.img-soniccd {
+.img-sonic-2-title {
     float: right;
     width: 100%;
     max-width: 320px;
@@ -67,10 +62,6 @@ ol.b {
     list-style: none;
 }
 
-ol.c {
-    list-style: none;
-}
-
 a {
     color: #ffffff;
     text-decoration: none;
@@ -80,14 +71,10 @@ a:hover {
     color: #7fffd4;
 }
 
-.img-title-screen {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 320px;
-    max-height: 244px;
-    height: auto;
-    display: block;
+ul li {
+    padding-left: 5px;
+    margin-bottom: 0.5em;
+    line-height: 150%;
 }
 
 .imagens-grandes {
@@ -99,68 +86,12 @@ a:hover {
     display: block;
 }
 
-.img-sp-cdsonic {
-    float: right;
+.imagens {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 320px;
     max-height: 244px;
     height: auto;
-    margin-left: 15px;
-}
-
-.column {
-    float: left;
-    padding: 5px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-ul li {
-    padding-left: 5px;
-    margin-bottom: 0.5em;
-    line-height: 150%;
-}
-
-figcaption {
-    text-align: center;
-}
-
-.lvl-select-soniccd {
-    float: right;
-    margin-left: 15px;
-}
-
-.img-timewarp {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer {
-    background-color: #000000;
-    padding: 10px;
-}
-
-.footer-top {
-    text-align: center;
-    margin: 20px;
-}
-
-.footer-top a {
-    text-align: center;
-    margin: 10px;
-}
-
-.footer-middle {
-    text-align: center;
-    color: #ffffff;
-}
-
-.footer-bottom {
-    text-align: center;
-    color: #ffffff;
 }
