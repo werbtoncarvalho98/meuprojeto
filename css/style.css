@@ -11,6 +11,41 @@ body {
     padding: 0;
 }
 
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 640px;
+  max-height: 448px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
 .principal {
     background-color: #101010;
     text-align: justify;
@@ -43,7 +78,7 @@ body {
 
 figure {
     border: 1px #181818 solid;
-    padding: 4px;
+    padding: 2px;
     margin: auto;
     width: fit-content;
 }
@@ -87,15 +122,6 @@ a:hover {
     max-width: 320px;
     max-height: 244px;
     height: auto;
-    display: block;
-}
-
-.imagens-grandes {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 640px;
-    max-height: 448px;
     display: block;
 }
 
