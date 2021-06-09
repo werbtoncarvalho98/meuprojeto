@@ -190,3 +190,7 @@ figcaption {
     text-align: center;
     color: #ffffff;
 }
+
+.img-footer {
+    vertical-align: middle;
+}
