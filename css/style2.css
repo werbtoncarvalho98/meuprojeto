@@ -81,11 +81,12 @@ ul li {
     justify-content: center;
   }
 
-figure {
+  figure {
     border: 1px #181818 solid;
     padding: 2px;
     margin: auto;
     width: fit-content;
+    border-width: 100%;
 }
 
 figcaption {
@@ -96,6 +97,7 @@ figcaption {
 }
 
 .img-sonic-jumping {
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -105,17 +107,15 @@ figcaption {
     float: left;
     padding: 5px;
 }
+
+.column-img {
+    width: 100%;
+}
   
 .row::after {
     content: "";
     clear: both;
     display: table;
-}
-
-@media screen and (max-width: 320px) {
-    .column {
-    width: 100%;
-    }
 }
 
 .footer {

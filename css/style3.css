@@ -41,6 +41,7 @@ figure {
     padding: 4px;
     margin: auto;
     width: fit-content;
+    border-width: 100%;
 }
 
 figcaption {

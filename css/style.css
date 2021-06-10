@@ -81,6 +81,7 @@ figure {
     padding: 2px;
     margin: auto;
     width: fit-content;
+    border-width: 100%;
 }
 
 figcaption {
@@ -167,16 +168,14 @@ a:hover {
     padding: 5px;
 }
 
+.column-img {
+    width: 100%;
+}
+
 .row::after {
     content: "";
     clear: both;
     display: table;
-}
-
-@media screen and (max-width: 320px) {
-    .column {
-    width: 100%;
-    }
 }
 
 ul li {
