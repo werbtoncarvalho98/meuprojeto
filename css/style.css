@@ -127,11 +127,20 @@ a:hover {
 
 .img-sp-cdsonic {
     float: right;
-    width: 100%;
     max-width: 320px;
     max-height: 244px;
+    width: 100%;
     height: auto;
     margin-left: 15px;
+}
+
+.img-secretsp {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    max-height: 244px;
+    display: block;
+    width: 100%;    
 }
 
 .img-cdsonic {
@@ -139,6 +148,15 @@ a:hover {
     margin-right: auto;
     max-width: 640px;
     max-height: 448px;
+    display: block;
+    width: 100%;
+}
+
+.img-timewarp {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    max-height: 244px;
     display: block;
     width: 100%;
 
@@ -155,6 +173,12 @@ a:hover {
     display: table;
 }
 
+@media screen and (max-width: 320px) {
+    .column {
+    width: 100%;
+    }
+}
+
 ul li {
     padding-left: 5px;
     margin-bottom: 0.5em;
@@ -166,8 +190,11 @@ figcaption {
 }
 
 .lvl-select-soniccd {
+    max-width: 320px;
+    max-height: 244px;
     float: right;
     margin-left: 15px;
+    width: 100%;
 }
 
 .img-timewarp {

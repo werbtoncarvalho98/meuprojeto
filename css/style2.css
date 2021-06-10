@@ -67,7 +67,7 @@ ul li {
     line-height: 150%;
 }
 
-.imagens-grandes {
+.img-g {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -110,6 +110,12 @@ figcaption {
     content: "";
     clear: both;
     display: table;
+}
+
+@media screen and (max-width: 320px) {
+    .column {
+    width: 100%;
+    }
 }
 
 .footer {
