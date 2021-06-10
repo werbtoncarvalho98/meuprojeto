@@ -44,6 +44,10 @@ figure {
     border-width: 100%;
 }
 
+.img-g-fig {
+    width: 100%;
+}
+
 figcaption {
     color: white;
     font-style: italic;
