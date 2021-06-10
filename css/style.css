@@ -11,8 +11,9 @@ body {
     padding: 0;
 }
 
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {display: none}
-img {vertical-align: middle;}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
+    display: none
+}
 
 .slideshow-container {
   max-width: 640px;
@@ -182,10 +183,6 @@ ul li {
     padding-left: 5px;
     margin-bottom: 0.5em;
     line-height: 150%;
-}
-
-figcaption {
-    text-align: center;
 }
 
 .lvl-select-soniccd {
