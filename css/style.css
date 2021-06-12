@@ -11,30 +11,65 @@ body {
     padding: 0;
 }
 
+header ul, a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    
+}
+
+logo {
+    cursor: pointer;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: rgba(white);
+    border-radius: 50px;
+    border: none;
+    cursor:  pointer;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
     display: none
 }
 
 .slideshow-container {
-  max-width: 640px;
-  max-height: 448px;
-  position: relative;
-  margin: auto;
+    max-width: 640px;
+    max-height: 448px;
+    position: relative;
+    margin: auto;
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
@@ -60,7 +95,7 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
-  }
+}
 
 .img-soniccd {
     float: right;
@@ -145,7 +180,7 @@ a:hover {
     width: 100%;    
 }
 
-.img-cdsonic {
+.img-g {
     margin-left: auto;
     margin-right: auto;
     max-width: 640px;
