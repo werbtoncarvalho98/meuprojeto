@@ -11,39 +11,53 @@ body {
     padding: 0;
 }
 
-header ul, a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-header {
+.header {
+    overflow: hidden;
     background-color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
+    padding: 20px 10px;
+  }
+  
+.header a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin: 4px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+.header a:hover {
+    background-color: #181818;
+    color: #ffffff;
+  }
+  
+.header a.active {
+    background-color: #1e90ff;
+    color: white;
+}
+  
+.header-right {
+    float: right;
+}
+  
+@media screen and (max-width: 500px) {
+    .header a {
+    float: none;
+    display: block;
+    text-align: left;
+}
     
-}
-
-logo {
-    cursor: pointer;
-}
-
-.nav-links a {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-button {
-    padding: 5px 20px;
-    background-color: rgba(white);
-    border-radius: 50px;
-    border: none;
-    cursor:  pointer;
-}
-
-button:hover {
-    background-color: aquamarine;
+    .header-right {
+        float: none;
+    }
 }
 
 .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
