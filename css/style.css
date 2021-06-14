@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,8 +16,8 @@ body {
     overflow: hidden;
     background-color: #000000;
     padding: 20px 10px;
-  }
-  
+}
+
 .header a {
     float: left;
     color: #fff;
@@ -27,17 +28,12 @@ body {
     font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
-  }
-  
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
+}
   
 .header a:hover {
     background-color: #181818;
     color: #ffffff;
-  }
+}
   
 .header a.active {
     background-color: #1e90ff;
@@ -69,6 +65,38 @@ body {
     max-height: 448px;
     position: relative;
     margin: auto;
+}
+
+.container {
+    max-width: 640px;
+    max-height: 448px;
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+  
+.container:hover .overlay {
+    opacity: 1;
 }
 
 .prev, .next {

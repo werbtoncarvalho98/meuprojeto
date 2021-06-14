@@ -32,12 +32,12 @@ body {
 .header a.logo {
     font-size: 25px;
     font-weight: bold;
-  }
+}
   
 .header a:hover {
     background-color: #181818;
     color: #ffffff;
-  }
+}
   
 .header a.active {
     background-color: #1e90ff;

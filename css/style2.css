@@ -18,6 +18,7 @@ body {
   }
   
 .header a {
+    align-content: space-around;
     float: left;
     color: #fff;
     text-align: center;
@@ -27,17 +28,12 @@ body {
     font-size: 18px; 
     line-height: 25px;
     border-radius: 4px;
-  }
-  
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
+}
+    
 .header a:hover {
     background-color: #181818;
     color: #ffffff;
-  }
+}
   
 .header a.active {
     background-color: #1e90ff;
