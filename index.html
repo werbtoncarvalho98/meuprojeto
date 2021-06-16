@@ -1,494 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <title>Projeto - Sonic CD</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <title>RetroWiki - Home</title>
 </head>
-
 <body>
     <!-- Cabeçalho da página -->
     <header>
-      <div class="header">
-        <img src="img/logo.png" alt="">
-        <nav class="header-right">
-          <a href="pagdois.html">Sonic 1</a>
-          <a href="index.html">Sonic CD</a>
-          <a href="pagtres.html">Sonic 2</a>
-          <a class="active" href="#">Home</a>
-        </nav>
-      </div>
+        <div class="header">
+            <img class="logo" src="img/logo.png" alt="">
+        </div>
     </header>
     <!-- Conteúdo da página -->
     <main class="principal">
-        <h1>Sonic The Hedgehog CD (1993)</h1>
-        <p><img class="img-soniccd" src="img/sonicdtitlescreen.png" alt=""> Tudo acontece entre <a href="pagdois.html">Sonic The Hedgehog 1</a> e
-            <a href="pagtres.html">Sonic the Hedgehog 2</a>, em um pequeno mundo chamado "Little Planet", que surge em Never Lake uma vez por ano,
-            nesse lugar, o presente e o futuro são interligados, criando as Time Stones, joias que dão à Sonic o poder
-            de viajar no tempo. Quando Dr. Robotnik fica sabendo da existencia dessas joias, parte imediatamente para
-            Little Planet, instalando sua base e máquinas ao redor do pequeno mundo para coletar as jóias antes de
-            Sonic.</p>
-        <p>Nesta página, iremos resumir algumas curiosidades sobre as fases, conteúdo escondido e alguns protótipos que foram descobertos do
-            game.</p>
+        <h1>Sobre o RetroWiki</h1>
+        <p>RetroWiki é um website inspirado nos antigos fórums e fandoms de games da internet, onde é abordado vários assuntos sobre games, principalmente aqueles mais clássicos, como os games dos anos 90, nosso foco é mostrar conteúdos diversos, como curiosidades, protótipos, conteúdos descartados, Easter Eggs e dentre vários outros. No momento, vamos abordar esses conteúdos sobre uma das franquias mais queridas do mundo dos games, Sonic the Hedgehog, que, apesar dos pesares, essa é uma franquia que permanece viva até hoje, com muitos lançamentos nos últimos anos. Entretanto, a RetroWiki irá explorar os jogos mais clássicos, como Sonic 1, Sonic 2, Sonic CD e Sonic 3, estes que são com certeza os mais ricos e memoráveis da série.</p>
+        <p>Ainda nessa página, comentaremos sobre um protótipo recém descoberto de um dos jogos mais populares dentre os fãs da série, Sonic The Hedgehog 3. </p>
+
+        <h1>Em destaque</h1>
+        <div class="container">
+            <div class="grid">
+                <article>
+                    <img src="img/thumb.png" alt="">
+                    <div class="text">
+                        <h3>Sonic 1</h3>
+                        <p>Curiosidades sobre desenvolvimento, fases e protótipos.</p>
+                        <a href="pag2.html"><button>Leia</button></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="img/thumb_2.png" alt="">
+                    <div class="text">
+                        <h3>Sonic CD</h3>
+                        <p>Curiosidades sobre fases, protótipos e alguns "Easter Eggs".</p>
+                        <a href="pag3.html"><button>Leia</button></a>
+                    </div>
+                </article>
+                <article>
+                    <img src="img/thumb_3.png" alt="">
+                    <div class="text">
+                        <h3>Sonic 2</h3>
+                        <p>Curiosidades sobre desenvolvimento, fases e protótipos.</p>
+                        <a href="pag4.html"><button>Leia</button></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <h1>Veja também: Sonic The Hedgehog 3 (1994)</h1>
+        <p><img class="img-sonic-3" src="img/sonic3title.png" alt="Sonic 3"> Sonic The Hedgehog 3 foi o quarto (apesar de ser nomeado como terceiro) e último da franquia da série clássica, foi lançado para o Mega Drive (Genesis), encerrando o arco da Death Egg, que começou no jogo anterior, Sonic The Hedgehog 2. O conhecido personagem Knuckles foi apresentado nesse game, que expandiu muito a história do universo dos jogos. Dentre todo os jogos 2D, Sonic 3 foi considerado um dos melhores jogos da franquia. O jogo foi lançado no Japão para o Mega Drive em 27 de maio de 1994. Já o lançamento europeu e americano foi em 24 de fevereiro de 1994 e 2 de fevereiro de 1994 para o Genesis, respectivamente.</p>
+        <p>Iremos abordar as diferenças mais notáveis para o jogo final, alguns bugs e outras coisas que esse protótipo possui.</p>
+
         <!-- Índice / Navegação -->
         <nav class="navegacao">
             <h1>Conteúdos</h1>
             <ol class="a">
-                <li><a href="#Fases">1. Fases</a></li>
+                <a href="#Proto"><li>1. November 3rd, 1993 Prototype</li></a>
                 <ol class="a-b">
-                    <li><a href="#Palmtree-Panic">1.1. Palmtree Panic</a></li>
-                    <li><a href="#Collision-Chaos">1.2. Collision Chaos</a></li>
-                    <li><a href="#Tidal-Tempest">1.3. Tidal Tempest</a></li>
-                    <li><a href="#Quartz-Quadrant">1.4. Quartz Quadrant</a></li>
-                    <li><a href="#Wacky-Workbench">1.5. Wacky Workbench</a></li>
-                    <li><a href="#Stardust-Speedway">1.6. Stardust Speedway</a></li>
-                    <li><a href="#Metallic-Madness">1.7 Metallic Madness</a></li>
+                    <a href="#Titulo"><li>1.1. Tela de título</li></a>
+                    <a href="#Drop-Dash"><li>1.2. Drop Dash?</li></a>
+                    <a href="#SEGA"><li>1.3. Logotipo da SEGA</li></a>
+                    <a href="#Level-Select"><li>1.4. Level Select</li></a>
+                    <a href="#Bugs"><li>1.5. Bugs!</li></a>
+                    <a href="#Bugs-graficos"><li>1.6. Bugs gráficos</li></a>
+                    <ol class="c">
+                        <a href="#AIZ"><li>1.6.1 Angel Island Zone</li></a>
+                        <a href="#HZ"><li>1.6.2 Hidrocity Zone</li></a>
+                        <a href="#MVZ"><li>1.6.3 Mushroom Valley Zone</li></a>
+                    </ol>
                 </ol>
-                <li><a href="#Modificacoes">2. Modificações</a></li>
-                <ol class="b">
-                    <li><a href="#R2">2.1. R2</a></li>
-                    <li><a href="#Salad-Plain?">2.2. Salad Plain?</a></li>
-                    <li><a href="#Special-Stage-descartado">2.3. Special Stage descartado</a></li>
-                    <li><a href="#Viagem-no-tempo">2.4. Viagem no tempo</a></li>
-                </ol>
-                <li><a href="#Prototype-510">3. Prototype 510</a></li>
-                <ol class="c">
-                    <li><a href="#CD-Sonic">3.1. CD Sonic</a></li>
-                    <li><a href="#Tela-de-titulo">3.2. Tela de título</a></li>
-                    <li><a href="#Special-Stage">3.3. Special Stage</a></li>
-                </ol>
-                <li><a href="#Extra">4. Extra</a></li>
-                <ol class="c">
-                    <li><a href="#Easter-Egg">4.1. Easter Egg bizarro</a></li>
-                </ol>
-                <li><a href="#Referencias">5. Referências</a></li>
-            </ol>
+                <li><a href="#Referencias">2. Referências</a></li>
         </nav>
 
-        <h1 id="Fases">Fases</h1>
-        <h2 id="Palmtree-Panic">Palmtree Panic</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides1">
-              <img class="image" src="img/slideshow/palmtreepanic.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides1">
-              <img class="image" src="img/slideshow/palmtreepanic-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides1">
-              <img class="image" src="img/slideshow/palmtreepanic-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides1">
-              <img class="image" src="img/slideshow/palmtreepanic-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-          </div>          
-        <ul>
-            <li>Se você tiver olhos bens atentos, poderá perceber que essa fase é a reimaginação da Green Hill Zone de
-                Sonic the Hedgehog 1.</li>
-            <li>Na batalha contra o Dr. Robotnik dessa fase, se o jogador for abaixo da área do chefe usando o debug
-                bug, é possível encontrar três monitores, sendo que dois deles não são possíveis de obter no jogo, entre
-                eles está o famigerado monitor com a letra "S", que dá ao Sonic invencibilidade e super velocidade ao
-                mesmo tempo, e um monitor com um relógio, que congela o tempo e todos os objetos por alguns segundos.
-            </li>
-            <li>Nas primeiras versões do game, a fase originalmente se chamava Salad Plain, entretanto, isso foi
-                posteriormente descartado.</li>
-        </ul>
-        <h2 id="Collision-Chaos">Collision Chaos</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides2">
-              <img class="image" src="img/slideshow/collisionchaos.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides2">
-              <img class="image" src="img/slideshow/collisionchaos-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides2">
-              <img class="image" src="img/slideshow/collisionchaos-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides2">
-              <img class="image" src="img/slideshow/collisionchaos-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Essa é a fase equivalente à Spring Yard Zone de Sonic The Hedgehog 1.</li>
-            <li>Em um dos protótipos, Metal Sonic seria capaz de causar dano ao jogador no início do primeiro ato, isso
-                justifica a razão pela qual há um monitor de escudo escondido no começo da fase.</li>
-            <li>Existe um bug onde o jogador pode cair num poço sem fundo no final dessa fase, isso acontece devido aos
-                diferentes level designs das linhas temporais e da física da viagem no tempo.</li>
-        </ul>
-        <h2 id="Tidal-Tempest">Tidal Tempest</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides3">
-              <img class="image" src="img/slideshow/tidaltempest.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides3">
-              <img class="image" src="img/slideshow/tidaltempest-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides3">
-              <img class="image" src="img/slideshow/tidaltempest-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides3">
-              <img class="image" src="img/slideshow/tidaltempest-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Essa é a fase equivalente a Labyrinth Zone, a temida e típica fase debaixo d'água.</li>
-            <li>Essa é a única fase no jogo onde não é mostrada na sequência de créditos ao zerar o jogo.</li>
-            <li>Devido a uma falha na emulação da placa de vídeo, o port de Sonic CD na Sonic Gems Colletion
-                (PlayStation 2 e GameCube) deixou as águas da linha temporal do sempre mais clara em oposição ao verde
-                da versão original.</li>
-        </ul>
-
-        <h2 id="Quartz-Quadrant">Quartz Quadrant</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides4">
-              <img class="image" src="img/slideshow/quartzquadrant.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides4">
-              <img class="image" src="img/slideshow/quartzquadrant-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides4">
-              <img class="image" src="img/slideshow/quartzquadrant-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides4">
-              <img class="image" src="img/slideshow/quartzquadrant-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Quartz Quadrant é uma das duas fases fases que não possui uma contraparte de Sonic 1.</li>
-            <li>A versão americana da música do futuro bom dessa fase foi remixada para a faixa N´rrgal Colony em Sonic
-                Chronicles The Dark Brotherhood.</li>
-            <li>A música da versão japonesa do futuro bom dessa fase foi utilizada em builds iniciais e jogáveis de
-                Sonic X-treme.</li>
-        </ul>
-
-        <h2 id="Wacky-Workbench">Wacky Workbench</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides5">
-              <img class="image" src="img/slideshow/wackyworkbench.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides5">
-              <img class="image" src="img/slideshow/wackyworkbench-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides5">
-              <img class="image" src="img/slideshow/wackyworkbench-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides5">
-              <img class="image" src="img/slideshow/wackyworkbench-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Outra fase que não possui uma contraparte de Sonic 1.</li>
-            <li>No Ato 1, existe uma sala secreta que se encontra abaixo da primeira placa de "Passado" para viajar no
-                tempo, e que pode ser acessada por uma rampa. Esse easter egg possui um achievement para o relançamento
-                digital do jogo. No presente e no futuro bom, não é possível entrar nas sala.</li>
-            <li>No passado, o jogador pode atravessar uma parede, que o leva para a pequena sala. Assemelha-se a um
-                templo de tijolo de pedra com pilares (em contraste com as partes mecânicas) e a uma estátua de um anjo.
-                Esta estátua recompensará o jogador com uma fonte de Anéis. O jogador pode sair e voltar para coletar
-                mais anéis.</li>
-        </ul>
-
-        <h2 id="Stardust-Speedway">Stardust Speedway</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides6">
-              <img class="image" src="img/slideshow/stardustspeedway.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides6">
-              <img class="image" src="img/slideshow/stardustspeedway-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides6">
-              <img class="image" src="img/slideshow/stardustspeedway-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides6">
-              <img class="image" src="img/slideshow/stardustspeedway-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Essa fase é a contraparte da Star Light Zone, mas também é bem semelhante a Chemical Plant de Sonic 2.
-            </li>
-            <li>Essa é uma das fases com as mais diferenças entre as versões de sua música, principalmente as músicas
-                dos futuros ruins, tanto a do Japão como a dos EUA.</li>
-        </ul>
-
-        <h2 id="Metallic-Madness">Metallic Madness</h2>
-        <div class="slideshow-container">
-          <div class="container">
-            <div class="mySlides7">
-              <img class="image" src="img/slideshow/metallicmadness.png" style="width:100%">
-              <div class="overlay">Presente</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides7">
-              <img class="image" src="img/slideshow/metallicmadness-past.png" style="width:100%">
-              <div class="overlay">Passado</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides7">
-              <img class="image" src="img/slideshow/metallicmadness-bad.png" style="width:100%">
-              <div class="overlay">Futuro ruim</div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="mySlides7">
-              <img class="image" src="img/slideshow/metallicmadness-good.png" style="width:100%">
-              <div class="overlay">Futuro bom</div>
-            </div>
-          </div>
-            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
-          </div>
-        <ul>
-            <li>Essa fase é a contraparte da Scrap Brain.</li>
-            <li>O ato 3 é o único em todo o jogo a ter uma queda mortal</li>
-            <li>Se você habilitar o debug mode e estiver usando o "Sonic Pequenininho" e viajar no tempo, você verá a
-                animação mini dele fazendo a viagem no tempo.</li>
-        </ul>
-
-        <h1 id="Modificacoes">Modificações</h1>
-        <h2 id="R2">R2</h2>
-        <p><img class="lvl-select-soniccd" src="img/levelselectsoniccd.png" alt="Level Select de Sonic CD"> R2 é o nome
-            de referência a uma fase deletada de Sonic CD, ela foi descoberta através da análise dos arquivos internos
-            do jogo. Ao analisar os arquivos, foi visto que as fases pulam da "R1" diretamente para "R3", a existência
-            dessa fase também foi provada por meio do level select, onde é realmente visto que as fases pulam do nível 1
-            para o nível 3. Em uma entrevista entrevista realizada com Jim Tretheway, um dos desevolvedores de Sonic CD,
-            foi afirmado que a R2 foi cortada por não atingir os padrões de qualidade.
-        </p>
-        <p>A fase se passaria entre a Palmtree Panic e Collision Chaos, e teria 3 atos. Provalvelmente, essa fase seria
-            a releitura de Marble Garden Zone de Sonic 1.</p>
-
-        <h2 id="Salad-Plain?">Salad Plain?</h2>
-        <p>Palmtree Panic originalmente se chamaria Salad Plain, isso foi descoberto em um dos protótipos do jogo, onde
-            na tela de Time Attack (que curiosamente, tocava a música do presente da Collision Chaos) mostrava este como
-            o nome da primeira fase.</p>
+        <h1 id="Proto">November 3rd, 1993 Prototype</h1>
+        <figure class="fig">
+            <img class="img-g-fig" src="img/proto-sonic3title.png" alt="">
+            <figcaption class="legenda">Tela de título usada no protótipo</figcaption>
+        </figure>
+        <p>O protótipo mais conhecido e também mais recente do game, foi encontrado em 16 de Novembro de 2019 pela Hidden Palace. A razão de ser o mais conhecido se deve ao fato de ser o único prototípo "real" do jogo, já que todos os outros protótipos de pré-lançamento eram do jogo final. Embora o nome dado ao protótipo seja a data de 3 de Novembro de 1993, os dados coletados a partir do código fonte indicam que pode ter sido compilado no final de outubro do mesmo ano.</p>
+        <h2 id="Titulo">Tela de título</h2>
+        <p>A tela de título tem uma das maiores diferenças pra versão final, sendo bem simples e mal acabada, não há nenhum fundo, além das cores serem bastantes distoantes entre si. Uma diferença bem visível é que o corpo do Sonic aparece inteiro.</p>
         <figure>
             <div class="flex-container">
                 <div class="row">
                     <div class="column">
-                        <img class="column-img" src="img/saladplain.png" alt="Salad Plain">
-                        <figcaption>(Sega CD)/v0.02</figcaption>
+                        <img class="column-img" src="img/proto-sonic3title_2.png" alt="">
+                        <figcaption>Protótipo</figcaption>
                     </div>
                     <div class="column">
-                        <img class="column-img" src="img/timattack.png" alt="Time Attack">
-                        <figcaption>(Sega CD)/v0.02</figcaption>
+                        <img class="column-img" src="img/sonic3title_2.png" alt="">
+                        <figcaption>Versão Final</figcaption>
                     </div>
                 </div>
             </div>
         </figure>
         <ul>
-            <li>Não é possível ter um futuro bom nessa build. Entretanto, os arquivos da fase para o futuro bom estão
-                presentes no disco.</li>
-            <li>A paleta de cores dessa fase é diferente, apresentando algumas ligeiras mudanças. Os dados da paleta de
-                cores e os dados do ciclo da paleta ainda se encontram no jogo final.</li>
-            <li>O presente tem um fundo diferente, sendo a diferença mais notável as montanhas mais curtas e menos
-                geométricas. Este fundo precoce é a base para os fundos das outras linhas do tempo, que se mantiveram
-                inalterados no jogo final.</li>
+            <li>A renderização do Sonic aparentemente não foi retocada em nada, a paleta de cores parece ter sido gerada por computador, portanto, aparecem problemas com a tonalidade de cores. O banner do logotipo foi alterado de um esquema de cores azul claro e branco para vermelho e branco, e o logotipo em si foi alterado de azul escuro com contornos laranja (a forma como o texto era apresentado na arte da caixa para títulos anteriores) para amarelo escuro contornos azuis. Também não há o famoso TM ao lado do banner.</li>
+            <li>O modelo do anel e do próprio Sonic parecem ser os mesmos, com apenas algumas diferenças pra versão final, no protótipo, as pupílas do Sonic parecem mais largas, seus dedos mais grossos e as orelhas não tem interior. Sonic também não tem boca na tela de título do prototípo.</li>
         </ul>
 
-        <h2 id="Special-Stage-descartado">Special Stage descartado</h2>
-        <p>Existe um oitavo special stage no jogo final, sendo acessado somente com o código (FM07, PCM07, DA07) no
-          sound test, porém, ela existe apenas como um extra.</p>
-        <img class="img-secretsp" src="img/secretspecialstage.png" alt="">
-        <ul>
-          <li>Segundo um funcionário da SEGA da Europa, a ideia originalmente era de que o jogo tivesse uma oitava Time
-          Stone. Ao coletá-la, os monitores de áneis automaticamente se transfomariam no monitor com a letra "S", que
-          já foi citado acima, que daria poderes de invencibilidade e super velocidade ao mesmo tempo.</li>
-          <li>Ao vencer esse Special Stage secreto, você verá uma tela oculta da Special Stage com o tema final do jogo
-          tocando.</li>
-        </ul>
+        <h2 id="Drop-Dash">Drop Dash?</h2>
+        <p>Uma das coisas mais interessantes desse protótipo, Sonic tinha uma mecânica EXTREMAMENTE parecida com o que mais tarde apareceria em um dos jogos mais recentes da franquia, Sonic Mania, a mecânica em questão é o Drop Dash. ele pode ser executado segurando o direcional para cima, e, em seguida, apertando o botão de pulo.</p>
+        <video src="vid/dropdash.mp4" controls></video>                 
 
-        <h2 id="Viagem-no-tempo">Viagem do tempo</h2>
-        <p>A tela de carregamento da viagem no tempo em um dos protótipos (mais especificadamente, o protótipo v0.02)
-            era bastante diferente da versão final, com os gráficos e a animação ainda bem simples.</p>
-        <img class="img-timewarp" src="img/timewarp.png" alt="">
-        <ul>
-            <li>O efeito sonoro da viagem no tempo era também bastante diferente da versão final, sendo um barulho bem
-                alto e irritante.</li>
-            <li>As placas que fazem Sonic viajar no tempo ainda não tinham efeitos sonoros.</li>
-            <li>A viagem no tempo parece não funcionar corretamente, pois ao tentar viajar usando os "spinners" da
-                Palmtree Panic fará com que a fase atual seja reiniciada, em vez de permitir que o Sonic viaje no tempo.
-            </li>
-        </ul>
-
-        <h1 id="Prototype-510">Prototype 510</h1>
-        <h2 id="CD-Sonic">CD Sonic</h2>
-        <img class="img-g" src="img/cdsonictitlescreen.png" alt="">
-        <p>Protótipo 510, por vezes conhecido como CD Sonic the Hedgehog, é um protótipo antecipado do Sonic CD. A sua
-            data de compilação é 10 de Maio de 1993. O protótipo mostra o jogo quando estava aproximadamente a meio
-            caminho de ser concluído, todas as fases são jogáveis, embora apenas três possam ser acessados sem level
-            select. Há também bastantes diferenças para a versão final, desde o áudio inicial até aos power-ups
-            adicionais.
-        </p>
-        <h2 id="Tela-de-titulo">Tela de título</h2>
-            <figure>
-                <div class="flex-container">
-                    <div class="row">
-                        <div class="column">
-                            <img class="column-img" src="img/cdsonictitlescreen_2.png" alt="CD Sonic">
-                            <figcaption>Prototype 510</figcaption>
-                        </div>
-                        <div class="column">
-                            <img class="column-img" src="img/sonicdtitlescreen.png" alt="Time Attack">
-                            <figcaption>Versão Final</figcaption>
-                        </div>
+        <h2 id="SEGA">Logotipo da SEGA</h2>
+        <p>O logotipo parece ter sido retirado de Sonic 2, só que um pouco bugada!</p>
+        <figure>
+            <div class="flex-container">
+                <div class="row">
+                    <div class="column">
+                        <img class="column-img" src="img/segalogo-proto.png" alt="">
+                        <figcaption>Protótipo</figcaption>
+                    </div>
+                    <div class="column">
+                        <img class="column-img" src="img/segasonic3-logo.png" alt="">
+                        <figcaption>Versão Final</figcaption>
                     </div>
                 </div>
-            </figure>
+            </div>
+        </figure>
         <ul>
-            <li>Como é facilmente notável, o título do jogo é CD Sonic the Hedgehog, em vez de Sonic the Hedgehog CD.
-            </li>
-            <li>Um emblema dourado com o logótipo Sega e a data copyright (1993) está presente, mas foi removido da
-                versão final.</li>
-            <li>O nome da cantora da abertura em anime (versão japonesa), Keiko Utoku é creditado logo na tela de
-                título. Utoku é uma cantora japonesa que faz parte do grupo de idols Mi-Ke e é a voz por trás da música
-                tema "You Can Do Anything".</li>
-            <li>As nuvens estão rolando da esquerda para a direita, em vez de usar a camada de escala de sprite.</li>
+            <li>O clássico som do "SEEEEEGAAAAA" está um pouco abafado.</li>
+            <li>Devido a um bug no código, muita memória RAM é utilizada, o que acabava fazendo escurer toda a paleta de cores. Isso não era um problema no Sonic 2 porque a memória RAM estava organizada de forma diferente.</li>
+            <li>Os sprites do Sonic foram atualizados para usar a nova paleta de personagens, porém, por algum motivo a tela da SEGA ainda carrega a antiga paleta do Sonic 2.</li>
         </ul>
 
-        <h2 id="Special-Stage">Special Stage</h2>
-        <p><img class="img-sp-cdsonic" src="img/proto510specialstage.png" alt=""> No Protótipo 510 de Sonic CD, o
-            Special Stage é um pouco mais do que uma tech demo. Ele aparece como parte de uma demonstração do jogo, mas
-            não pode ser jogado de nenhuma forma sem hacking. Nesta demo, os ovnis não existem, mas uma mensagem
-            interessante aparece piscando na tela escrito: "The programmer has a nap. Hold out! Programmer!" ou em
-            português: "O programador tirou uma soneca. Aguente firme! Programador!"</p>
-        <ul>
-            <li>O design do Special Stage é semelhante ao da segunda fase do jogo final. Sonic não é mostrado parado,
-                ele imediatamente começa a andar e rapidamente começa a correr. Ele também não possui uma sombra ainda,
-                e não há um title card ou display de heads-up. </li>
-            <li>O óleo no chão, que posteriormente foi removido, é uma das principais características deste layout de
-                protótipo.</li>
-        </ul>
+        <h2 id="Level-Select">Level Select</h2>
+        <p><img class="img-level-select" src="img/s3lvlselect.png"></img> Quase o mesmo que o jogo final, entretanto, não reproduz nenhuma música, tornando o tema padrão do File Select não utilizado. Uma outra diferença é quando se seleciona o Sound Test e pressiona B, irá reproduzir o som erro.</p>
+        <p>Como no jogo final, nenhuma das fases de Sonic & Knuckles são acessáveis por padrão (com exceção de Flying Battery). Ao contrário do jogo final, todos os estágios de bônus são acessíveis (o último 2P VS Act vai para o bônus da máquina de chicletes, enquanto os dois atos "Bônus" vão para os estágios de bônus Sonic & Knuckles).</p>
 
-        <h1 id="Extra">Extra</h1>
-        <h2 id="Easter-Egg">Easter Egg bizarro</h2>
-        <p>De todos os jogos da franquia, Sonic CD é um dos que mais possuem easter eggs (coisas escondidas nos jogos, popularmente conhecido como "Easter Eggs"), dentre eles está uma arte bizarra com algumas palavras escritas em japônes, e várias ilustrações ao fundo do que parece ser o Sonic com o rosto de uma pessoa usando uma máscara.</p>
-        <video src="img/vid/majin.mp4" controls></video>
+        <h2 id="Bugs">Bugs!</h2>
+        <p>Sonic e Tails tem alguns probleminhas com gráficos quando se termina uma fase, como pode ver abaixo:</p>
+        <figure>
+            <div class="flex-container">
+                <div class="row">
+                    <div class="column">
+                        <img class="column-img" src="img/bugsonic3.png" alt="">
+                        <figcaption>Sonic caindo pra sempre.</figcaption>
+                    </div>
+                    <div class="column">
+                        <img class="column-img" src="img/bugssonic3_2.png" alt="">
+                        <figcaption>Tails (também caindo pra sempre).</figcaption>
+                    </div>
+                </div>
+            </div>
+        </figure>
         <ul>
-          <li>Se você estiver jogando a versão americana, esse Easter Egg ficará ainda mais bizarro. Como o Easter Egg usa a música tema do Dr. Robotnik, que é muito mais bizarra que a versão japonesa, deixará um clima ainda mais estranho ao ver o Easter Egg (Veja no vídeo acima).</li>
-          <li>O texto e as ilustrações foram feitas por Masato Nishimura, e, traduzindo os textos para o inglês, mostra a mensagem "Fun is infinite. Sega Enterprises - Mazin Picture",</li>
-          <li>Esse Easter Egg só pode ser visto usando o Sound Test, usando os códigos FM46, PCM12, DA25, respectivamente.</li>
+            <li>Quando se joga com o Sonic, a imagem do postezinho por algum motivo mostra o rosto do Tails</li>
+            <li>Um bug parecido e muito estranho acontece quando se joga com o Tails, a imagem do poste mostra o rosto do Knuckles, porém, com a paleta cores do sprite do Sonic.</li>
+            <li>Quando se termina a fase, os sprites dos personagens mudam para um posição de queda, provavelvente isso acontece por ainda não ter sprites de vitória vistos no jogo final</li>
         </ul>
+        
+        <h2 id="Bugs-graficos">Bugs gráficos</h2>
+        <p>Quanto aos bugs visuais, esse protótipo tem aos montes, devido a provavelmente ainda estar no início do desenvolvimento. Iremos alguns dos exemplos, e você irá ver que alguns deles são bem esquisitos.</p>
+        <h3 id="AIZ">Angel Island Zone</h3>
+        <img class="img-p" src="img/cardbugs3.png" alt="">
+        <p>O title card é carregado quando a fase começa, independentemente se a cutscene da abertura é reproduzido, fazendo com que as os gráficos quebrem totalmente.</p>
+
+        <h3 id="HZ">Hidrocity Zone</h3>
+        <img class="img-p" src="img/bugvisualhidrocity.png" alt="">
+        <p>O jogo tinha problemas para carregar o fundo em altitudes mais elevadas do cenário após o jogador morrer na Hidrocity Zone, isso causava esse estranho bug visual, com vários números e gráficos quebrados.</p>
+
+        <h3 id="MVZ">Mushroom Valley Zone (Ou seja lá o que for!)</h3>
+        <img class="img-p" src="img/bugvisual_mushroomv.png" alt="">
+        <p>Essa é uma "fase" completamente quebrada e injogável, e, com isso, assim que o Sonic spawna, o jogador morre sem motivo. Ela reutiliza os title cards da Launch Base Zone. Isso acontece para o resto das fases até The Doomsday Zone, com algumas mudanças notáveis aqui e ali.</p>
+
         <h1 id="Referencias">Referências</h1>
-        <p>1. <a href="https://tcrf.net/Sonic_the_Hedgehog_CD_(Sega_CD)" target="_blank">The Cutting Room Floor, Sonic the Hedgehog CD (Sega CD)</a></p>
-        <p>2. <a href="https://hiddenpalace.org/Sonic_the_Hedgehog_CD_(Dec_4,_1992_prototype)">Hidden Palace, Sonic the Hedgehog CD (Dec 4, 1992 prototype)</a></p>
-
+        <p>1. <a href="https://hiddenpalace.org/Sonic_the_Hedgehog_3_(Nov_3,_1993_prototype)" target="_blank">Hidden Palace, Sonic the Hedgehog 3 (Nov 3, 1993 prototype)</a></p>
     </main>
-
-    <!-- JavaScript Slideshows -->
-    <script>
-        var slideIndex = [1,1,1,1,1,1,1];
-        var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides7"]
-        showSlides(1, 0);
-        showSlides(1, 1);
-        showSlides(1, 2);
-        showSlides(1, 3);
-        showSlides(1, 4);
-        showSlides(1, 5);
-        showSlides(1, 6);
-        
-        function plusSlides(n, no) {
-          showSlides(slideIndex[no] += n, no);
-        }
-        
-        function showSlides(n, no) {
-          var i;
-          var x = document.getElementsByClassName(slideId[no]);
-          if (n > x.length) {slideIndex[no] = 1}    
-          if (n < 1) {slideIndex[no] = x.length}
-          for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
-          x[slideIndex[no]-1].style.display = "block";  
-        }
-        </script>
 
     <!-- Rodapé da página -->
     <footer class="footer">
@@ -499,12 +183,30 @@
             <a href="https://www.instagram.com/carvalhowerbton98/" target="_blank"><img class="img-footer" src="img/icons/instagram.png" alt=""></a>
         </div>
         <div class="footer-middle">
-            <p>Site desenvolvido por Werbton Carvalho</p>
+            <p>Site projetado por Werbton Carvalho</p>
         </div>
         <div class="footer-bottom">
             <p>2021</p>
         </div>
     </footer>
-</body>
+    <a id="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <script>
+        var mybutton = document.getElementById("gotopbtn");
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
 
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
 </html>
