@@ -242,6 +242,7 @@ figcaption {
 .footer-bottom {
     text-align: center;
     color: #ffffff;
+    padding-bottom: 5px;
 }
 
 .img-footer {
